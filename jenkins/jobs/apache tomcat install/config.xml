@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1174.vdcb_d054cf74a_">
+  <actions/>
+  <description>Installing apache tomcat</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2686.v7c37e0578401">
+    <script>pipeline {
+    agent any {
+        stages {
+            stage(&apos;checkout&apos;) {
+                steps {
+                        sh &apos;echo &quot;installing apache tomcat&quot;&apos;
+                        sh &apos;sudo su -&apos;
+                        sh &apos;apt update&apos;
+                        sh &apos;apt install default-jre -y&apos;
+                        dir(&quot;/opt&quot;) {
+                                     sh &apos;wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.62/bin/apache-tomcat-9.0.62.tar.gz&apos;
+                                     sh &apos;tar -xvf apache-tomcat-9.0.62.tar.gz&apos;
+                                     sh &apos;sh apache-tomcat-9.0.62/bin/startup.sh&apos;
+                                    }
+                }
+            }
+            stage(&apos;edit&apos;) {
+                steps {
+                        sh &apos;sed -i &apos;21s/ &lt;Valve/ &lt;!-- &lt;Valve/1&apos; /opt/apache-tomcat-9.0.62/webapps/host-manager/META-INF/context.xml&apos;
+                        sh &apos;sed -i &apos;21s/ &lt;Valve/ &lt;!-- &lt;Valve/1&apos; /opt/apache-tomcat-9.0.62/webapps/manager/META-INF/context.xml&apos;
+                        sh &apos;sed -i  &apos;69s/port=&quot;8080&quot;/port=&quot;8081&quot;/g&apos; /opt/apache-tomcat-9.0.62/conf/server.xml&apos;
+                }    
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

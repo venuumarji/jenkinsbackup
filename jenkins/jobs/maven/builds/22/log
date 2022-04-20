@@ -1,0 +1,25 @@
+Started by user [8mha:////4Iz9iL4xpnTehOgPlGwMjJyF18Sq1WxBWVptSliGe7GJAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9rNS87My8YgBQTgYiwgAAAA==[0mvenugopal
+Running as SYSTEM
+Building remotely on [8mha:////4B8QZW3kCtaMmwJP5/3kaoT40iTfNxX8lqv6waI7fnUvAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/eKcxLJUheLUIgDotVcbyAAAAA==[0mslave ser (tomcat) in workspace /home/slave1/jenkins/workspace/maven
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/venuumarji/hello-world-war.git
+ > git init /home/slave1/jenkins/workspace/maven # timeout=10
+Fetching upstream changes from https://github.com/venuumarji/hello-world-war.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/venuumarji/hello-world-war.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/venuumarji/hello-world-war.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ddc7a9a757cf971e331080d0d4dddf2f15b92b2a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ddc7a9a757cf971e331080d0d4dddf2f15b92b2a # timeout=10
+Commit message: "Update index.jsp"
+ > git rev-list --no-walk ddc7a9a757cf971e331080d0d4dddf2f15b92b2a # timeout=10
+[maven] $ /bin/bash /tmp/jenkins1114558416035076094.sh
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

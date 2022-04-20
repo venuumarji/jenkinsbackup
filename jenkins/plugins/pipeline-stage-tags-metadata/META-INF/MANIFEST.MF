@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.332.1
+Plugin-Dependencies: workflow-api:1143.v2d42f1e9dea_5
+Implementation-Title: pipeline-stage-tags-metadata
+Long-Name: Pipeline: Stage Tags Metadata
+Implementation-Version: 2.2075.vce74e77b_ce40
+Group-Id: org.jenkinsci.plugins
+Minimum-Java-Version: 1.8
+Plugin-License-Name: MIT
+Specification-Title: Library plugin for Pipeline stage tag metadata
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-model-definition-
+ plugin
+Plugin-Version: 2.2075.vce74e77b_ce40
+Jenkins-Version: 2.332.1
+Url: https://github.com/jenkinsci/pipeline-model-definition-plugin
+Short-Name: pipeline-stage-tags-metadata
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-Developers: Andrew Bayer:abayer:
+Extension-Name: pipeline-stage-tags-metadata
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.2
+

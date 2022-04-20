@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: szheng
+Build-Jdk: 1.8.0_192
+Extension-Name: sonarqube-generic-coverage
+Specification-Title: Jenkins SonarQube generic coverage plugin
+Implementation-Title: sonarqube-generic-coverage
+Implementation-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: sonarqube-generic-coverage
+Long-Name: SonarQube Generic Coverage Plugin
+Plugin-Version: 1.0
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: code-coverage-api:1.0.11
+Plugin-Developers: Shenyu Zheng:cizezsy:zsy19980307@gmail.com
+

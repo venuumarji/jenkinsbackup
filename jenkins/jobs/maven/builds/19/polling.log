@@ -1,0 +1,12 @@
+Started on Apr 17, 2022, 11:17:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 572043249113451cdeadbdc7ff4474f7cfee0250 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/venuumarji/hello-world-war.git # timeout=10
+Found 2 remote heads on https://github.com/venuumarji/hello-world-war.git
+[poll] Latest remote head revision on refs/heads/master is: c612eb132828e1a767e8b28ca5525c7bf215f24e
+Done. Took 94 ms
+Changes found

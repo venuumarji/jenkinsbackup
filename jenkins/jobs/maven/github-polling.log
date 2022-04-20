@@ -1,0 +1,13 @@
+Started on Apr 18, 2022, 2:33:59 PM
+Started by event from 140.82.115.117 ⇒ http://44.201.125.25:8080/github-webhook/ on Mon Apr 18 14:33:59 UTC 2022
+Using strategy: Default
+[poll] Last Built Revision: Revision c612eb132828e1a767e8b28ca5525c7bf215f24e (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/venuumarji/hello-world-war.git # timeout=10
+Found 2 remote heads on https://github.com/venuumarji/hello-world-war.git
+[poll] Latest remote head revision on refs/heads/master is: ddc7a9a757cf971e331080d0d4dddf2f15b92b2a
+Done. Took 0.16 sec
+Changes found
